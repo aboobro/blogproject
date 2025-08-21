@@ -1,0 +1,50 @@
+body {
+    background-image: url('https://avatars.mds.yandex.net/i?id=3218de416f35a4d20d4c737cf119d273_l-4825391-images-thumbs&ref=rim&n=13&w=2560&h=1600'); /* Rasm nomi va yo'lini to'g'ri yozing */
+    background-size: 2000px 2000px;     /* Rasmni ekran bo‘ylab to‘liq yoyadi */
+    background-repeat: no-repeat; /* Rasm takrorlanmasligi uchun */
+    background-position: center;  /* Rasm markazga joylashadi */
+}
+footer h2 {
+    position: relative;
+}
+header h1 {
+    text-align: center;
+}
+header h1 a {
+    color: rgb(184, 90, 212);
+    font-family: "DynaPuff", cursive;
+    font-weight: 300;
+    font-style: normal; 
+}
+div p {
+    color: white;
+    font-family: "Roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+div h2 {
+    text-align: center;
+}
+div h2 a {
+    color: rgb(99, 164, 218);
+    font-family: "Roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer h2 a {
+    position: absolute;
+    top: -470px;
+    right: 10px;
+    text-align: left;
+    color: rgb(224, 140, 71);
+    font-family: "Roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    color:yellow;
+}
+p a {
+    color: rgb(50, 226, 80);
+}
