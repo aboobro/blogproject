@@ -1,0 +1,97 @@
+header h1 {
+    text-align: center;
+}
+
+header h1 a {
+    color: rgb(190, 140, 206);
+    font-family: "DynaPuff", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('https://avatars.mds.yandex.net/i?id=3218de416f35a4d20d4c737cf119d273_l-4825391-images-thumbs&ref=rim&n=13&w=2560&h=1600'); /* Rasm nomi va yo'lini to'g'ri yozing */
+    background-size: 2000px 2000px;     /* Rasmni ekran bo‘ylab to‘liq yoyadi */
+    background-repeat: no-repeat; /* Rasm takrorlanmasligi uchun */
+    background-position: center;  /* Rasm markazga joylashadi */
+}
+
+div p {
+    color: white;
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer h2 {
+    position: relative;
+}
+footer h2 a {
+    position: absolute;
+    top: -2000px;
+    left: 1600px;
+    color: rgb(224, 140, 71);
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2 {
+    position: relative;
+}
+h2 a {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(212, 77, 77)
+}
+
+div h2 {
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(130, 176, 212);
+}
+
+div h3 {
+    position: relative;
+}
+div h3 {
+    position: absolute;
+    top: 800px;
+    right: 10px;
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: bisque;
+}
+
+h4 {
+    text-align: left;
+}
+h4 a {
+    text-align: left;
+    font-family: "roboto", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(125, 216, 186);
+}
+p {
+    color:yellow;
+}
+p a {
+    color: rgb(50, 226, 80);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p h3 a {
+    color: rgb(255, 255, 255);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}

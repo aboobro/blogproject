@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/foto.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+{% endblock head %}
+
+{% block content %}
+    {% for post in object_list %}
+    <div class="post-enty">
+        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+        <p>{{ post.body|slice:":100" }}</p>
+    </div>
+    {% endfor %}
+{% endblock content %}

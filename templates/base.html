@@ -1,0 +1,41 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bosh sahifa</title>
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/static.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <!-- import qilish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Lexend+Deca:wght@100..900&family=Libre+Baskerville&display=swap" rel="stylesheet">
+{% endblock head %}
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">BOSH SAHIFAGA O'TISH</a></h1>
+    </header>
+{% if user.is_authenticated %}
+    <p>ro'yxatdan o'tish muvoffaqiyatli amalga oshirildi hush kelibsiz {{ user.username }}</p>
+    <form method="post" action="{% url 'logout' %}">{% csrf_token %}
+        <button type="submit">Chiqish</button>
+    </form>
+{% else %}
+    <p>
+        <a href="{% url 'login' %}">Saytga kirish</a>
+        <h3><a href="{% url 'signup' %}">Ro'yxatdan o'tish</a></h3>
+    </p>
+{% endif %}
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+    <footer>
+        <h2><a href="{% url 'post_new' %}">Yangi post yaratish</a></h2>
+    </footer>
+</body>
+</html>
